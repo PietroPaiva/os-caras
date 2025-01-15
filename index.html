@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Os caras</title>
+    <link rel="stylesheet" href="style/style.css">
 </head>
 <style>
 
@@ -12,68 +13,44 @@ body{
 
 }
 
+
 header{
   border-bottom: 1px solid 	#000000; 
-  padding-bottom: 20px; 
-    text-align: center;
-}
+  padding-bottom: 10px; }  
 
 header > h1{
     margin: 30px 0px 0px 0px;
+    text-align: center;
 }
 
 main{
     margin-top: 40px;
-    text-align: center;
+}
+
+div.photo{
+    display: inline-block;
+    width: 400px;
+    height: 400px;
+    margin: auto;
 }
 
 img{
-    border-radius: 10px;
-    width: 280px;
-    height: 280px;
-
-    margin-left: 60px;
-    margin-right: 60px;
-    transition: all 0.5s; /* Efeitos pegados na internet pq eu não sei fazer kskskskk */
-    cursor: pointer; /* Efeitos pegados na internet pq eu não sei fazer kskskskk */
+    width: 400px;
+    height: 400px;
 }
 
-img:hover{
-    -webkit-filter: drop-shadow(15px 10px 5px rgba(0,0,0,.5));
-    filter: drop-shadow(15px 10px 5px rgba(0,0,0,.5));
-}
 
-main > a{
-    margin-top: 10px;
-    margin-left: 170px;
-    margin-right: 170px;
-    font-style: bold;
-    font-size: 18px;
-    color: #000;
-    text-decoration: none;
-    transition: color 0.3s;
-}
-
-main > a:hover{
-    color: #d108d8;
-}
 </style>
 
 <body>
-<div><header>
-    <h1>Esse site é em homenagem aos caras Mais Fod@s do Brasil!</h1>
+    <header>
+        <div><h1>Esse site é em homenagem aos caras Mais Fod@s do Brasil!</h1></div>
+    </header>
+    <main>
+        <a href="muniz.html"><div class="photo" id="muniz"><img src="imagens/muniz.enc" alt="png"></div></a>
 
-</header></div>
-
-<main>
-        <picture>
-            <id = "img1"><a href="muniz.html"><img src="imagens/muniz.enc" alt="muniz"></a></id>
-            
-            <id = "img2"><a href="rafael.html"><img src="imagens/rafael" alt="rafael"></a></id>
-    </div>
-    <a href="muniz.html">Muniz</a>
-     <a href="rafael.html">Rafarts</a>
-</main>
+        <a href="rafael.html"><div class="photo" id="rafarts"><img src="imagens/rafael" alt="png"></div></a>
+    </main>
 
 <footer>
 
