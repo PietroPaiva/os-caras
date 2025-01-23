@@ -1,5 +1,19 @@
 @charset "UTF-8";
  
+
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Sixtyfour+Convergence&display=swap');
+
+
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+IN:wght@100..400&display=swap');
+
+:root{
+    --fonte1: "Sixtyfour Convergence", serif;
+    --fonte2: "Playwrite IN", serif;
+}
+
 * {
     margin: 0px;
     padding: 0px
@@ -15,26 +29,65 @@ section{
     padding-bottom: 10vh;
     line-height: 2em;
     padding-left: 30px;
+    font-size: 2.5vw;
+
+    display: flex;
+    align-items: center;
+
 }
 
-section.normaL{
+section.normal{
+    height: 100vh;
     background-color: antiquewhite;
+    font-family: var(--fonte2);
 }
 
 section.img{
+    height: 50vh;
     background-color: coral;
+    font-family: var(--fonte2);
+    box-shadow: inset 6px 6px 13px 0px black;
+    background-attachment: fixed;
 }
 
 section.img > p{
-    width: 400px;
+    display: inline-block;
     background-color: rgba(0, 0, 0, 0.315);
+    color: white;
+    text-shadow: 1px 1px 0px black;
+
 }
 
-header > h1,  footer > p{
+section#img1{
+    background-image: url('../imagens/muniz1.jpeg');
+    background-position: left center;
+    background-size: cover;
+}
+
+section#img2{
+    background-image: url('../imagens/muniz3.jpeg');
+    background-position: right center;
+    background-size: cover;
+}
+
+
+header > h1{
+text-align: center;
+background-color: black;
+color: white;
+font-variant: small-caps;
+padding: 30px 0px 30px 0px;
+font-size: 50px;
+}
+
+footer > p{
     text-align: center;
     background-color: black;
     color: white;
     font-variant: small-caps;
+    padding: 30px 0px 30px 0px;
+    font-size: 30px;
+
 }
 
 footer p:hover{
