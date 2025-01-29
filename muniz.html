@@ -1,53 +1,150 @@
-<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Melhor Jogador de Rocket League</title>
+    <style>
+  
+
+  *{
+    margin: 0;
+    padding: 0;
+  }
+        body {
+            background-color: black;
+            color: aliceblue;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+
+        h1 {
+            margin-bottom: 20px;
+        }
+
+        h2 {
+            margin: 10px 0;
+            text-align: left;
+        }
+
+        img {
+            border-radius: 10px;
+            max-width: 100%;
+            height: auto;
+            transition: transform 0.3s ease;
+        }
+
+        img:hover {
+            transform: scale(1.03); /* Efeito de zoom ao passar o mouse */
+        }
+
+        /* Estilos para tabelas */
+        .table {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .table-item {
+            flex: 1;
+            padding: 10px;
+            max-width: 50%;
+        }
+
+        .table-item img {
+            width: 100%; /* Imagem ocupa o máximo permitido pela célula */
+        }
+
+        .text {
+            padding: 10px;
+            font-size: 18px;
+        }
+
+        /* Ajustes responsivos */
+        @media (max-width: 768px) {
+            .table-item {
+                max-width: 100%; /* Ocupa 100% em telas menores */
+            }
+
+            h1 {
+                font-size: 24px;
+            }
+
+            h2 {
+                font-size: 16px;
+            }
+        }
+
+        .voltar{
+
+color: red;
+text-align: center;
+border: 2px solid red;
+margin-bottom: 10px;
+padding: 0;
+
+
+
+
+}
+
+.voltar h1:hover{
+background-color: red;
+color: antiquewhite;
+}
+
+        footer > p{
+    text-align: center;
+    background-color: rgb(39, 39, 39);
+    color: white;
+    font-variant: small-caps;
+    padding: 30px 0px 30px 0px;
+    font-size: 30px;
+
+}
+
+footer p:hover{
+    color: blueviolet;
+}
+    </style>
 </head>
-<style> 
-
-body{
-    background-color: black;
-    color: aliceblue;
-}
-
-    img{
-        border-radius: 10px;
-        width: 300px;
-        height: auto;
-        transition: transform 0.3s ease;
-}
-
-img:hover {
-  transform: scale(1.03); /* Aumenta 10% */
-}
-
-
-
-</style>
 <body>
     <h1>Conheça Agora o Melhor Jogador de Rocket League do Brasil!!!!</h1>
 
+    <!-- Primeira seção -->
+    <div class="table">
+        <div class="table-item">
+            <img src="imagens/rafarts1.jpeg" alt="Imagem de Rafarts">
+        </div>
+        <div class="table-item text">
+            <h2>Esse cara é literalmente o careca mais dahora &#128525;</h2>
+        </div>
+    </div>
 
+    <!-- Segunda seção -->
+    <div class="table">
+        <div class="table-item text">
+            <h2>Ele que é um dos caras mais fodas que Eu já vi na VIDA &#129312;</h2>
+        </div>
+        <div class="table-item">
+            <img src="imagens/rafarts2.jpeg" alt="Imagem de Rafarts">
+        </div>
+    </div>
 
-<table>
-    <td width="50%" valign="right"><img src="imagens/rafarts1.jpeg" alt="jpeg"></td>
-    <td><h2>Esse cara é literalmente o careca mais dahora &#128525;</h2></td>
-</table>
-
-
-
-<table>  
-    <td width="10vw" valign="center"><h2>Ele que é um dos caras mais fodas que Eu ja vi na VIDA &#129312;</h2></td>
-    <td width="10vw" valign="right"><div id="imgdois"><img src="imagens/rafarts2.jpeg" alt="jpeg"></div></td>
-</table>
-
-
-<table>
-    <td width="50%" valign="top"><div id="imgdois"><img src="imagens/rafarts3.jpeg" alt="jpeg"></div></td>
-    <td><h2>E é ainda um dos caras mais BONITÕES &#128526;<table>
-</table>
-
+    <!-- Terceira seção -->
+    <div class="table">
+        <div class="table-item">
+            <img src="imagens/rafarts3.jpeg" alt="Imagem de Rafarts">
+        </div>
+        <div class="table-item text">
+            <h2>E é ainda um dos caras mais BONITÕES &#128526;</h2>
+        </div>
+    </div>
+    <a href="index.html"><div class="voltar"><h1>VOLTAR</h1></div></a>
+    <footer><p>Criado pelo cara mais Bosta do Brasil</p></footer>  
 </body>
 </html>

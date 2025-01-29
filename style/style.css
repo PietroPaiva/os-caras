@@ -21,8 +21,17 @@
 
 html, body {
     min-height: 100vh;
-    background-color: bisque;
+    background-color: antiquewhite;
 }
+
+header > h1{
+    text-align: center;
+    background-color: black;
+    color: white;
+    font-variant: small-caps;
+    padding: 30px 0px 30px 0px;
+    font-size: 50px;
+    }
 
 section{
     padding-top: 10vh;
@@ -70,14 +79,22 @@ section#img2{
     background-size: cover;
 }
 
+.voltar{
 
-header > h1{
-text-align: center;
-background-color: black;
-color: white;
-font-variant: small-caps;
-padding: 30px 0px 30px 0px;
-font-size: 50px;
+    color: red;
+    text-align: center;
+    border: 2px solid red;
+    margin-bottom: 10px;
+    padding-bottom: 5px;
+    
+
+
+
+}
+
+.voltar h1:hover{
+background-color: red;
+color: antiquewhite;
 }
 
 footer > p{

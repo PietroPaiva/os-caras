@@ -4,58 +4,93 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Os caras</title>
-    <link rel="stylesheet" href="style/style.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;700&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html, body {
+            background-color: #000000;
+            color: white;
+            font-family: "Poppins", sans-serif;
+            font-variant: small-caps;
+        }
+
+        header {
+            border-bottom: 1px solid white;
+            padding-bottom: 10px;
+            text-align: center;
+        }
+
+        div.photo {
+            display: inline-block;
+            width: 40vh;
+            height: 40vh;
+            margin: 20px;
+        }
+
+        div.photo:hover {
+            border: 1px solid red;
+        }
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        section {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .titulo {
+            display: flex; /* Permite alinhar lado a lado */
+            justify-content: center; /* Centraliza os textos no centro */
+            gap: 20px; /* Espaçamento entre os textos */
+            margin-top: 10px;
+        }
+
+        .titulo h1 {
+            margin: 0;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 30px;
+        }
+    </style>
 </head>
-<style>
-
-body{
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-
-}
-
-
-header{
-  border-bottom: 1px solid 	#000000; 
-  padding-bottom: 10px; }  
-
-header > h1{
-    margin: 30px 0px 0px 0px;
-    text-align: center;
-}
-
-main{
-    margin-top: 40px;
-}
-
-div.photo{
-    display: inline-block;
-    width: 400px;
-    height: 400px;
-    margin: auto;
-}
-
-img{
-    width: 400px;
-    height: 400px;
-}
-
-
-</style>
-
 <body>
     <header>
-        <div><h1>Esse site é em homenagem aos caras Mais Fod@s do Brasil!</h1></div>
+        <h1>Esse site é em homenagem aos caras Mais Fod@s do Brasil!</h1>
     </header>
-    <main>
-        <a href="muniz.html"><div class="photo" id="muniz"><img src="imagens/muniz.enc" alt="png"></div></a>
 
-        <a href="rafael.html"><div class="photo" id="rafarts"><img src="imagens/rafael" alt="png"></div></a>
-    </main>
+    <section>
+        <a href="muniz.html">
+            <div class="photo" id="muniz">
+                <img src="imagens/muniz.enc" alt="Foto de Munir">
+            </div>
+        </a>
 
-<footer>
+        <a href="rafael.html">
+            <div class="photo" id="rafarts">
+                <img src="imagens/rafael" alt="Foto de Rafarts">
+            </div>
+        </a>
+       
+        <div class="titulo">
+            <h1>Bictor Munir</h1>
+            <h1>Maria Rafarts</h1>
+        </div>
+    </section>
 
-</footer>
-
-
+    <footer>
+        <p>Criado pelo cara mais Bosta do Brasil</p>
+    </footer>
 </body>
 </html>
